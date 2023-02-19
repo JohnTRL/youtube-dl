@@ -981,7 +981,7 @@ class InfoExtractor(object):
             video_info['description'] = playlist_description
         return video_info
 
-    def _search_regex(self, pattern, string, name, default=NO_DEFAULT, fatal=True, flags=0, group=None):
+    def _search_regex(self, pattern, string, name, default=NO_DEFAULT, fatal=False, flags=0, group=None):
         """
         Perform a regex search on the given string, using a single or a list of
         patterns returning the first matching group.
